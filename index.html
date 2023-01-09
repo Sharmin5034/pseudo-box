@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo box</title>
+    <style>
+        h1:hover{
+            background-color: blue;
+        }
+        h1::before{
+            content: 'Bangladesh';
+        }
+        h1::after{
+            content: 'country';
+        }
+        .middle:focus{
+            color: blue;
+            font-weight: bold;
+            font-size: 21px;        }
+            a:visited{
+                color: red;
+            }
+            li:first-child{
+                color: blue;
+                font-size: 20px;
+            }
+            li:last-child{
+                color: red;
+            }
+            li:nth-last-child(2n+1){
+                color: goldenrod;
+                background-color: azure;
+            }
+            .swimming div{
+                position: relative;
+                border: 1px dashed maroon;
+                width: 200px;
+            }
+            #boy{
+                position: relative;
+                top: 75px;
+                z-index: 2;
+            }
+            #ring{
+                position: relative;
+                left: 0;
+               z-index: 1;
+               
+            }
+            #water{
+                position: relative;
+                top: -75px;
+            }
+            
+    </style>
+</head>
+<body>
+    <input type="text" class="middle">
+    <h1> is a small and beautiful </h1>
+    
+    <a href="https://www.programming-hero.com/" target="_blank">programming-hero</a>
+    <a href="https://www.google.com/" target="_blank">google</a>
+    
+    <ul>
+       <li>Alia</li>
+       <li>Chalia</li>
+       <li>Jalaia</li>
+       <li>Maria</li>
+       <li>paria</li>
+       <li>Kalia</li>
+       <li>palia</li>
+       <li>sumaia</li>
+       <li>Dumaia</li>        
+    </ul>
+    <section>
+        <h2>Banglabesh is a small and beautiful country </h2>
+        <h3>Banglabesh is a small and beautiful country</h3>
+        <h4>Banglabesh is a small and beautiful country</h4>        
+    </section>
+    <section class="swimming">
+        <div class="content" id="boy"><img src="img/boy.svg" alt="#"></div>
+        <div class="content" id="ring"><img src="img/ring.svg" alt="#"></div>
+        <div class="content" id="water"><img src="img/water.svg" alt="#"></div>
+        
+    </section>
+   
+</body>
+</html>
